@@ -19,11 +19,16 @@ body {
 
 }
 
-#logo {
-    max-width: 100%;
+#logodiv {
+    text-align: center;
+}
+
+.logo {
+    max-width: 600px;
     height: auto;
     width: auto;
     padding: 20px;
+    text-align: center;
 }
 
 #rulediv {
@@ -64,22 +69,26 @@ h1 {
 }
 
 #panelStyle {
-    background: white;
-    opacity: 0.5;
-    margin-top: 20px;
+    background: #97CB57;
     font-family: 'Assistant', sans-serif;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+
+.panel-body {
+    font-size: 24px;
 }
 
 #images1 {
     text-align: center;
     background: transparent;
     padding: 0;
-}
-
-#images2 {
-    text-align: center;
-    background: transparent;
-    padding: 0;
+    margin: 10px;
 }
 .crystalimg {
     border-radius: 30px;
@@ -94,8 +103,8 @@ h1 {
 #one {
     background: #D64756;
     margin: 15px;
-    height: 150px;
-    width: auto;
+    height: auto;
+    width: 200px;
     padding-left: 19px;
     padding-right: 19px;
 }
@@ -103,7 +112,7 @@ h1 {
 #two {
     background: #2180B3;
     margin: 15px;
-    height: 150px;
+    height: 132px;
     width: auto;
     padding-left: 33px;
     padding-right: 33px;
@@ -112,7 +121,7 @@ h1 {
 #three {
     background: #904FB4;
     margin: 15px;
-    height: 150px;
+    height: 132px;
     width: auto;
     padding-left: 39px;
     padding-right: 39px;
@@ -121,7 +130,7 @@ h1 {
 #four {
     background: #F05B3D;
     margin: 15px;
-    height: 150px;
-    width: auto;
+    height: auto;
+    width: 200px;
 }
 

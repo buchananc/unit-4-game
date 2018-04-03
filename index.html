@@ -22,7 +22,7 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <div><img id="logo" src="assets/images/tmntlogo.png"></div>
+            <div id="logodiv"><img src="assets/images/tmntlogo.png" class="logo"></div>
             <h1>Fight the Foot Clan</h1>
         </div>
             <div id="rulediv"> <!--Rules Start-->
@@ -46,43 +46,45 @@
     <div>
         <div class="container-fluid">
             <div class="row" id="images1">
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <img src="assets/images/Tmnt-raphael.png" class="crystalimg" id="one">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <img src="assets/images/Leonardo_TMNT.png" class="crystalimg" id="two">
                 </div>
-            </div>    
-            <div class="row" id="images2">
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <img src="assets/images/TMNT-PNG-Images.png" class="crystalimg" id="three">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <img src="assets/images/580b57fbd9996e24bc43c073.png" class="crystalimg" id="four">
                 </div>
             </div>
         </div>
     </div>
-    <div id="panelStyle">
-        <div class="panel-body">
-            <h4 id="firstbox">Number to match:
+    <div class="container-fluid" id="panelStyle">
+        <div class="row panel-body">
+            <div class="col-sm-6">
+                Number to match:
                 <span id="number"></span>
-            </h4>
-            <h4 id="secondbox">Your number:
+            </div>
+            <div class="col-sm-6">
+                Your number:
                 <span id="combined"></span>
-            </h4>
+            </div>
         </div>
     </div>
-    <div id="panelStyle">
-        <div class="panel-body">
-            <h4>
+    <div class="container-fluid" id="panelStyle">
+        <div class="row panel-body">
+            <div class="col-sm-6">
                 Wins:
                 <span id="numberWins"></span>
-                <br> Losses:
+            </div>
+            <div class="col-sm-6"> 
+                Losses:
                 <span id="numberLosses"></span>
-            </h4>
+            </div>
         </div>
-    </div>
+    </div>  
 </div> <!--Main Container End-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
