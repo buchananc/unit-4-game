@@ -1,7 +1,7 @@
 //sets up random number user is trying to match
 $(document).ready(function () {
     var Random = Math.floor(Math.random() * 69 + 30)
-    console.log(Random)
+    //console.log(Random)
     $('#number').text(Random);
 
     //	setting up four random numbers array, total variable and printing the wins & losses variables	
@@ -19,7 +19,7 @@ $(document).ready(function () {
             var num = Math.floor(Math.random() * 11 + 1);
             GeneratedNumbers.push(num);
         }
-        console.log(GeneratedNumbers)
+        //console.log(GeneratedNumbers)
     }
 
     fourRandomNumbers();
@@ -28,7 +28,7 @@ $(document).ready(function () {
     //resets the game
     function reset() {
         Random = Math.floor(Math.random()* 69 + 30);
-        console.log(Random)
+        //console.log(Random)
         $('#number').text(Random);
         GeneratedNumbers = [];
         fourRandomNumbers();
@@ -37,7 +37,7 @@ $(document).ready(function () {
     }
 
     //adds the wins to the total
-    function yay() {
+    function sweet() {
         alert("You won!!!");
         wins++;
         $('#numberWins').text(wins);
@@ -45,7 +45,7 @@ $(document).ready(function () {
     }
 
     //adds the losses to the total
-    function loser() {
+    function yikes() {
         alert("You lose!!");
         losses++;
         $('#numberLosses').text(losses);
@@ -53,58 +53,58 @@ $(document).ready(function () {
     }
 
     //sets up click for jewels
-    $('#crystal1').on('click', function () {
+    $('#one').on('click', function () {
         total = total + GeneratedNumbers[0];
-        console.log("New total= " + total);
+        //console.log("New total= " + total);
         $('#combined').text(total);
 
         //sets win/lose conditions
         if (total == Random) {
-            yay();
+            sweet();
         }
         else if (total > Random) {
-            loser();
+            yikes();
         }
     })
 
-    $('#crystal2').on('click', function () {
+    $('#two').on('click', function () {
         total = total + GeneratedNumbers[1];
-        console.log("New total= " + total);
+        //console.log("New total= " + total);
         $('#combined').text(total);
 
         if (total == Random) {
-            yay();
+            sweet();
         }
         else if (total > Random) {
-            loser();
+            yikes();
         }
     })
 
-    $('#crystal3').on('click', function () {
+    $('#three').on('click', function () {
         total = total + GeneratedNumbers[2];
-        console.log("New total= " + total);
+       // console.log("New total= " + total);
         $('#combined').text(total);
 
         //sets win/lose conditions
         if (total == Random) {
-            yay();
+            sweet();
         }
         else if (total > Random) {
-            loser();
+            yikes();
         }
     })
 
-    $('#crystal4').on('click', function () {
+    $('#four').on('click', function () {
         total = total + GeneratedNumbers[3];
-        console.log("New total= " + total);
+        //console.log("New total= " + total);
         $('#combined').text(total);
 
 
         if (total == Random) {
-            yay();
+            sweet();
         }
         else if (total > Random) {
-            loser();
+            yikes();
         }
     });
 
