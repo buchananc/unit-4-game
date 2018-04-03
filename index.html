@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Candace Buchanan" content="YOUR_NAME">
+    <meta name="subject" content="HTML WEBPAGE TITLE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystal Collector</title>
+
+    <!-- ALL CSS IN THE META HEAD SECTION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" integrity="sha256-uHu2MAd1LvCOVEAhvMld4LpJi7dUGS7GVzvG/5B3hlo="
+        crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Crystal Collector</h1>
+        </div>
+        <!--  creates the instructions  -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">Instructions</div>
+            </div>
+
+            <div class="panel-body"> <!--Rules Start-->
+            <p>
+                You will be given a random number at the start of the game.
+                <br>
+                <br> 
+                There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+                <br>
+                <br> 
+                You win the game by matching your total score to the random number. You lose the game if your total score goes above the
+                random number.
+                <br>
+                <br> 
+                The value of each crystal is hidden from you until you click on it.
+                <br>
+                <br> 
+                Each time when the game starts, the game will change the values of each crystal.
+                <br>
+                <br>
+            </p>
+        </div> <!--Rules End-->
+    </div> <!--Row 1: Title, Game Logo, Rules End-->
+
+    <div class="panel panel-default" id="panelStyle">
+        <div class="panel-body">
+            <img src="assets/images/untitled-1.gif" class="crystalimg" id="one">
+            <img src="assets/images/purpcrystal.gif" class="crystalimg" id="two">
+            <img src="assets/images/magic-crystals-drib_01.gif" class="crystalimg" id="three">
+            <img src="assets/images/dribbble-crystal.gif" class="crystalimg" id="four">
+        </div>
+    </div>
+    <div class="panel panel-default" id="panelStyle">
+        <div class="panel-body">
+            <h4 id="firstbox">Number to match:
+                <span id="number"></span>
+            </h4>
+            <h4 id="secondbox">Your number:
+                <span id="Combined"></span>
+            </h4>
+        </div>
+    </div>
+    <div class="panel panel-default" id="panelStyle">
+        <div class="panel-body">
+            <h4>
+                Wins:
+                <span id="numberWins"></span>
+                <br> Losses:
+                <span id="numberLosses"></span>
+            </h4>
+        </div>
+    </div>
+</div> <!--Main Container End-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

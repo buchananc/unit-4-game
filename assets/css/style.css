@@ -1,0 +1,17 @@
+.crystals {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.crystalimg {
+    height: 100%;
+    width: 150px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.crystalimg:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
