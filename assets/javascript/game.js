@@ -1,7 +1,6 @@
 //sets up random number user is trying to match
 $(document).ready(function () {
     var Random = Math.floor(Math.random() * 121 + 19)
-    //console.log(Random)
     $('#number').text(Random);
 
     //	setting up four random numbers array, total variable and printing the wins & losses variables	
@@ -12,23 +11,18 @@ $(document).ready(function () {
     $('#numberWins').text(wins);
     $('#numberLosses').text(losses);
 
-
     //sets up random numbers for each TMNT
     function fourRandomNumbers() {
         for (var i = 0; i < 4; i++) {
             var num = Math.floor(Math.random() * 13 + 1);
             GeneratedNumbers.push(num);
         }
-        //console.log(GeneratedNumbers)
     }
-
     fourRandomNumbers();
-
 
     //resets the game
     function reset() {
         Random = Math.floor(Math.random()* 69 + 30);
-        //console.log(Random)
         $('#number').text(Random);
         GeneratedNumbers = [];
         fourRandomNumbers();
@@ -55,7 +49,6 @@ $(document).ready(function () {
     //sets up click for TNMT
     $('#one').on('click', function () {
         total = total + GeneratedNumbers[0];
-        //console.log("New total= " + total);
         $('#combined').text(total);
 
         //sets win/lose conditions
@@ -69,9 +62,9 @@ $(document).ready(function () {
 
     $('#two').on('click', function () {
         total = total + GeneratedNumbers[1];
-        //console.log("New total= " + total);
         $('#combined').text(total);
-
+        
+        //sets win/lose conditions
         if (total == Random) {
             sweet();
         }
@@ -82,7 +75,6 @@ $(document).ready(function () {
 
     $('#three').on('click', function () {
         total = total + GeneratedNumbers[2];
-       // console.log("New total= " + total);
         $('#combined').text(total);
 
         //sets win/lose conditions
@@ -96,10 +88,9 @@ $(document).ready(function () {
 
     $('#four').on('click', function () {
         total = total + GeneratedNumbers[3];
-        //console.log("New total= " + total);
         $('#combined').text(total);
 
-
+        //sets win/lose conditions
         if (total == Random) {
             sweet();
         }
