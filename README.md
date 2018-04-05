@@ -3,7 +3,7 @@
 This is the fourth assignment completed for UNCC's Coding Bootcamp.
 In this assignment, we were required to create a fun and interactive web-based game. This time, the app must dynamically update the HTML with the jQuery library.
 
-##Getting Started
+## Getting Started
 Fight the Foot Clan
 
 Instructions:
@@ -17,7 +17,7 @@ The game will restart once you win or lose.Once a new game begins, the player sh
 Click on the following link to preview the completed assignment.
 https://buchananc.github.io/unit-4-game/
 
-##Built With
+## Built With
 
 HTML5
 CSS3
