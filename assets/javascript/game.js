@@ -1,6 +1,6 @@
 //sets up random number user is trying to match
 $(document).ready(function () {
-    var Random = Math.floor(Math.random() * 69 + 30)
+    var Random = Math.floor(Math.random() * 121 + 19)
     //console.log(Random)
     $('#number').text(Random);
 
@@ -13,10 +13,10 @@ $(document).ready(function () {
     $('#numberLosses').text(losses);
 
 
-    //sets up random numbers for each jewel
+    //sets up random numbers for each TMNT
     function fourRandomNumbers() {
         for (var i = 0; i < 4; i++) {
-            var num = Math.floor(Math.random() * 11 + 1);
+            var num = Math.floor(Math.random() * 13 + 1);
             GeneratedNumbers.push(num);
         }
         //console.log(GeneratedNumbers)
@@ -52,7 +52,7 @@ $(document).ready(function () {
         reset();
     }
 
-    //sets up click for jewels
+    //sets up click for TNMT
     $('#one').on('click', function () {
         total = total + GeneratedNumbers[0];
         //console.log("New total= " + total);
