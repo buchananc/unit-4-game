@@ -2,6 +2,13 @@
 $(document).ready(function () {
     var Random = Math.floor(Math.random() * 121 + 19)
     $('#number').text(Random);
+    
+    //play music
+    var audio = document.getElementById("myAudio");
+    function setHalfVolume() {
+        audio.volume = 0.2;
+    }
+    setHalfVolume();
 
     //	setting up four random numbers array, total variable and printing the wins & losses variables	
     var GeneratedNumbers = []
