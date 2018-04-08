@@ -41,7 +41,8 @@ body {
 }
 
 #shredder {
-    height: 420px;
+    height: 32em;
+    margin-top: 30px;
 }
 
 h1 {
@@ -92,6 +93,14 @@ h1 {
     padding: 0;
     margin: 10px;
 }
+
+#images2 {
+    text-align: center;
+    background: transparent;
+    padding: 0;
+    margin: 10px;
+}
+
 .crystalimg {
     border-radius: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -105,8 +114,8 @@ h1 {
 #one {
     background: #D64756;
     margin: 15px;
-    height: auto;
-    width: 200px;
+    height: 10em;
+    width: 15em;
     padding-left: 19px;
     padding-right: 19px;
 }
@@ -114,8 +123,8 @@ h1 {
 #two {
     background: #2180B3;
     margin: 15px;
-    height: 132px;
-    width: auto;
+    height: 10em;
+    width: 15em;
     padding-left: 33px;
     padding-right: 33px;
 }
@@ -123,8 +132,8 @@ h1 {
 #three {
     background: #904FB4;
     margin: 15px;
-    height: 132px;
-    width: auto;
+    height: 10em;
+    width: 15em;
     padding-left: 39px;
     padding-right: 39px;
 }
@@ -132,8 +141,8 @@ h1 {
 #four {
     background: #F05B3D;
     margin: 15px;
-    height: auto;
-    width: 200px;
+    height: 10em;
+    width: 15em;
 }
 
 #audioControl {
